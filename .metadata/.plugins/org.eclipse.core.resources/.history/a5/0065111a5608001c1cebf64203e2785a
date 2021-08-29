@@ -1,0 +1,29 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 29, 2021
+ *      Author: ragab
+ */
+
+#include <iostream>
+#include <valarray>
+using namespace std;
+
+//valarray<int>  is the variable legth array
+typedef VALARRAY valarray<int> ;
+
+class student:private string , VALARRAY{
+private:
+
+};
+
+
+int main(){
+
+	valarray<int> q ={1,2,3,4};
+
+
+
+
+	return 0;
+}

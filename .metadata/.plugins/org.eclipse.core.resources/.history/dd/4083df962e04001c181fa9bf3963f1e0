@@ -1,0 +1,56 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 23, 2021
+ *      Author: ragab
+ */
+#include <iostream>
+using namespace std;
+
+class Number{
+private :
+	int value;
+public :
+	Number(int value_ =0);
+	Number operator+(Number &pt);
+	Number operator+(int val);
+	Number operator+(int val , Number &pt);
+	void printValue();
+};
+
+
+Number::Number(int value_){
+	value = value_;
+}
+
+Number Number::operator+(Number &pt){
+	Number copy;
+	copy.value= value + pt.value;
+	return copy;
+}
+Number Number::operator+( int val , Number &pt){
+	Number copy;
+	copy.value= pt.value + val;
+	return copy;
+}
+Number Number::operator+(int val){
+	Number copy;
+	copy.value= value + val;
+	return copy;
+}
+void Number::printValue(){
+	cout<<"the value is:"<<value<<endl;
+}
+
+
+int main(){
+	Number a=10  ,b=10;
+	Number sum1 = a+5;
+	Number sum2 = a.operator +(9);
+	sum1.printValue();
+	sum2.printValue();
+
+
+	return 0;
+}
+

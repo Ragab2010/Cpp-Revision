@@ -1,0 +1,26 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 26, 2021
+ *      Author: ragab
+ */
+
+
+#include <iostream>
+using namespace std;
+
+class shape{
+private :
+	int length;
+	int width;
+public :
+	void printArea(){
+		cout<<"the Area="<<length*width<<endl;
+	}
+};
+int main(){
+
+
+
+	return 0;
+}

@@ -1,0 +1,6 @@
+19:46:19 **** Incremental Build of configuration Debug for project member_initializer_list ****
+make all 
+make: Nothing to be done for 'all'.
+
+19:46:19 Build Finished. 0 errors, 0 warnings. (took 214ms)
+

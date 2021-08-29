@@ -1,0 +1,46 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 29, 2021
+ *      Author: ragab
+ */
+
+#include <iostream>
+#include <valarray>
+using namespace std;
+
+//valarray<int>  is the variable legth array
+typedef valarray<int> VALARRAY;
+
+//Private version Student
+class Student:private string , private VALARRAY{
+public :
+	Student( char * name , const double *pArrayScore  ,int sizeOfArrayScore):
+		string(name) , VALARRAY(pArrayScore , sizeOfArrayScore){
+
+	}
+	void average ()const{
+		cout <<"the average is :"<<VALARRAY::sum()/VALARRAY::size()<<endl;
+	}
+	void printName(){
+		cout<<"the name is :"<<(string (*this))<<endl;
+	}
+
+
+};
+
+
+int main(){
+	valarray<int> arr[5]={1,2,3,4,5};
+	Student a("welcome", arr, 5);
+	a.average();
+	a.printName();
+
+
+	//valarray<int> q ={1,2,3,4};
+
+
+
+
+	return 0;
+}

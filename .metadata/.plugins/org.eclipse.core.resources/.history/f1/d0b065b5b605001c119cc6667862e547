@@ -1,0 +1,81 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 25, 2021
+ *      Author: ragab
+ */
+
+
+#include <iostream>
+using namespace std;
+
+class Human{
+private :
+	int age;
+
+	string name;
+public :
+	Human(string name_ ="none");
+	 Human(double ss);
+	//Human(int ss);
+	//Human(short ss);
+	 operator int();
+	~Human();
+	void printAge();
+	void printName();
+	void printAll();
+
+};
+ inline void Human::printAge(){
+
+	cout<<"age  is :"<<age<<endl;
+
+}
+void Human::printName(){
+	cout<<"name is :"<<name<<endl;
+
+}
+inline void Human::printAll(){
+	printAge();
+	printName();
+}
+
+
+//Human::Human(short ss){
+//	cout<<"constructor short  "<<endl;
+//	age=ss;
+//	name="none";
+//}
+//
+//Human::Human(int ss){
+//	cout<<"constructor int  "<<endl;
+//	age=ss;
+//	name="none";
+//}
+Human::Human(double ss_){
+	cout<<"constructor double  "<<endl;
+	age=(int)ss_;
+	name="none";
+}
+Human::operator int(){
+	return age;
+}
+
+Human::Human(string name_){
+	cout<<"constructor   of :"<<name_<<endl;
+	age= 0;
+	name=name_;
+}
+
+Human::~Human(){
+	cout<<"Deconstructor of :"<<name<<endl;
+
+}
+
+
+
+int main(){
+
+
+	return 0;
+}

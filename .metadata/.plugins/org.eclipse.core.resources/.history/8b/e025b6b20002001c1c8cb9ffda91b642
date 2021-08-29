@@ -1,0 +1,35 @@
+//============================================================================
+// Name        : revisioncpp.cpp
+// Author      : RAGAB
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+
+void print(int &x){
+	cout<<"int &x :"<<x<<endl;
+}
+
+//void print(const int &x){
+//	cout<<"const int &x :"<<x<<endl;
+//}
+//
+//void print(const int &&x){
+//	cout<<"const int &&x :"<<x<<endl;
+//}
+
+
+
+
+int main() {
+	int x=15;
+	const int y =19;
+	print(x);
+	print(y);
+	//print(x+y);
+	return 0;
+}

@@ -1,0 +1,19 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 29, 2021
+ *      Author: ragab
+ */
+
+#include <iostream>
+
+
+
+int main(){
+
+	valarray<int> q;
+
+
+
+	return 0;
+}

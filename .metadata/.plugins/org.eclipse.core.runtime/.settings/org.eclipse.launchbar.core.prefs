@@ -1,0 +1,17 @@
+LaunchTargetManager/configs/copyConstructorAndOperatorEqualWithInheritance=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/operator\ overloading=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/revisioncpp=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/test_this_pointer=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test_this_pointer,org.eclipse.launchbar.core.descriptorType.default\:revisioncpp,org.eclipse.launchbar.core.descriptorType.default\:operator overloading,org.eclipse.launchbar.core.descriptorType.default\:copy_constructor,org.eclipse.launchbar.core.descriptorType.default\:member_initializer_list,org.eclipse.launchbar.core.descriptorType.default\:inheritance,org.eclipse.launchbar.core.descriptorType.default\:copyConstructorAndOperatorEqualWithInheritance,org.eclipse.launchbar.core.descriptorType.default\:reuse_code,org.eclipse.launchbar.core.descriptorType.default\:multi inheritance and virtual keyword,org.eclipse.launchbar.core.descriptorType.default\:Template Class,org.eclipse.launchbar.core.descriptorType.default\:Template Classes and Friends
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:copyConstructorAndOperatorEqualWithInheritance/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:copyConstructorAndOperatorEqualWithInheritance/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:inheritance/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:inheritance/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:member_initializer_list/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:member_initializer_list/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:revisioncpp/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:revisioncpp/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

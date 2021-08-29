@@ -1,0 +1,25 @@
+19:46:18 **** Incremental Build of configuration Debug for project copy_constructor ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp:19:33: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   19 |  Human(int age_=0 ,char* name_ ="none");
+      |                                 ^~~~~~
+../main.cpp: In function ‘int main()’:
+../main.cpp:82:18: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   82 |  Human reda(26 , "REDA"); // implicit new reda object
+      |                  ^~~~~~
+../main.cpp:84:27: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   84 |  Human sayed = Human(23 , "Sayed"); // explicit create new sayed object
+      |                           ^~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: copy_constructor
+Invoking: GCC C++ Linker
+g++  -o "copy_constructor"  ./main.o   
+Finished building target: copy_constructor
+ 
+
+19:46:19 Build Finished. 0 errors, 3 warnings. (took 579ms)
+

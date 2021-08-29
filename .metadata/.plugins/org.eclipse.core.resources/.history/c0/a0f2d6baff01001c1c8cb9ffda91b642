@@ -1,0 +1,26 @@
+//============================================================================
+// Name        : revisioncpp.cpp
+// Author      : RAGAB
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+struct aa {
+	int i ;
+	char a[15];
+};
+
+const aa & re(aa & p ){
+	return p ;
+}
+int main() {
+	int a =10;
+	int *p = &a;
+	int* &pr = p;
+	cout<<*pr<<endl;
+	return 0;
+}

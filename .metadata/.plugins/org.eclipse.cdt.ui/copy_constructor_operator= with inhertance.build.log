@@ -1,0 +1,7 @@
+22:12:08 **** Clean-only build of configuration Debug for project copy_constructor_operator= with inhertance ****
+make clean 
+makefile:44: *** recipe commences before first target.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+
+22:12:08 Build Failed. 1 errors, 0 warnings. (took 168ms)
+

@@ -1,0 +1,50 @@
+19:46:20 **** Incremental Build of configuration Debug for project multi inheritance and virtual keyword ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+../main.cpp: In constructor ‘Singer::Singer(std::string, int, int)’:
+../main.cpp:108:6: warning: ‘Singer::voiceScore’ will be initialized after [-Wreorder]
+  108 |  int voiceScore;
+      |      ^~~~~~~~~~
+../main.cpp:111:45: warning:   base ‘Worker’ [-Wreorder]
+  111 |   voiceScore(voiceScore_),Worker(name_ , id_){
+      |                                             ^
+../main.cpp:110:2: warning:   when initialized here [-Wreorder]
+  110 |  Singer( string name_ , int id_  , int voiceScore_):
+      |  ^~~~~~
+../main.cpp: In constructor ‘Waiter::Waiter(std::string, int, int)’:
+../main.cpp:121:6: warning: ‘Waiter::score’ will be initialized after [-Wreorder]
+  121 |  int score;
+      |      ^~~~~
+../main.cpp:123:81: warning:   base ‘Worker’ [-Wreorder]
+  123 |  Waiter( string name_ , int id_  , int score_): score(score_),Worker(name_ , id_){
+      |                                                                                 ^
+../main.cpp:123:2: warning:   when initialized here [-Wreorder]
+  123 |  Waiter( string name_ , int id_  , int score_): score(score_),Worker(name_ , id_){
+      |  ^~~~~~
+../main.cpp: In constructor ‘waiterSinger::waiterSinger(std::string, int, int)’:
+../main.cpp:136:76: warning: base ‘Singer’ will be initialized after [-Wreorder]
+  136 |    Singer(name_, id_, score_),Waiter(name_, id_, score_) ,Worker(name_, id_) {
+      |                                                                            ^
+../main.cpp:136:76: warning:   base ‘Waiter’ [-Wreorder]
+../main.cpp:135:2: warning:   when initialized here [-Wreorder]
+  135 |  waiterSinger( string name_ , int id_  , int score_):
+      |  ^~~~~~~~~~~~
+../main.cpp:136:76: warning: base ‘Waiter’ will be initialized after [-Wreorder]
+  136 |    Singer(name_, id_, score_),Waiter(name_, id_, score_) ,Worker(name_, id_) {
+      |                                                                            ^
+../main.cpp:136:76: warning:   base ‘Worker’ [-Wreorder]
+../main.cpp:135:2: warning:   when initialized here [-Wreorder]
+  135 |  waiterSinger( string name_ , int id_  , int score_):
+      |  ^~~~~~~~~~~~
+Finished building: ../main.cpp
+ 
+Building target: multi inheritance and virtual keyword
+Invoking: GCC C++ Linker
+g++  -o "multi inheritance and virtual keyword"  ./main.o   
+Finished building target: multi inheritance and virtual keyword
+ 
+
+19:46:20 Build Finished. 0 errors, 12 warnings. (took 512ms)
+

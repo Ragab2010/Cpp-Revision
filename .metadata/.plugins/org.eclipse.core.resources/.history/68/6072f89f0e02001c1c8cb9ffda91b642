@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : revisioncpp.cpp
+// Author      : RAGAB
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+
+
+//void print(int x){
+//	cout<<"not template function int &x :"<<x<<endl;
+//}
+
+template<> void print<>(int x);
+
+
+
+
+int main() {
+	int x=15;
+	const int y =19;
+	print(x);
+	//print(y);
+
+	return 0;
+}
+
+
+template <class T>
+void print(T x){
+	cout<<"template function T x :"<<x<<endl;
+}
+
+
+
+

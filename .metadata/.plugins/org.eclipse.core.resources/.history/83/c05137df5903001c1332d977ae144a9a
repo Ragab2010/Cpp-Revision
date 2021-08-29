@@ -1,0 +1,67 @@
+//============================================================================
+// Name        : revisioncpp.cpp
+// Author      : RAGAB
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+
+class Human{
+private :
+	int age;
+	string name;
+public :
+	Human(string name_ ="none");
+	~Human();
+	void printAge();
+	void printName();
+	void printAll();
+
+};
+ inline void Human::printAge(){
+
+	cout<<"age  is :"<<age<<endl;
+
+}
+void Human::printName(){
+	cout<<"name is :"<<name<<endl;
+
+}
+inline void Human::printAll(){
+	printAge();
+	printName();
+}
+
+
+Human::Human(string name_ ="none"){
+	cout<<"constructor of :"<<name_<<endl;
+	age= 0;
+	name=name_;
+}
+
+Human::~Human(){
+	cout<<"Deconstructor"<<endl;
+
+}
+
+int main() {
+	Human();
+	Human ahmed= Human();//explicit call constructor
+//	Human ramy;         //implicit call constructor
+	Human *pTamer = new Human;//pointer point to object Human(29 , "Tamer")
+	ahmed.printAll();
+//	ramy.printAll();
+//	pTamer->printAll();
+
+
+	return 0;
+}
+
+
+
+
+@#$%^&*()__+++

@@ -1,0 +1,22 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 29, 2021
+ *      Author: ragab
+ */
+
+#include <iostream>
+using namespace std;
+template <class T>
+class HasFriend
+{
+friend void report(HasFriend<T> &); // bound template friend
+...
+};
+
+
+int main(){
+
+
+	return 0;
+}

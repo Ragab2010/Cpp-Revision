@@ -1,0 +1,52 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 29, 2021
+ *      Author: ragab
+ */
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+class HasFriend
+{
+private:
+	T item;
+	static int ct;
+public:
+	HasFriend(const T & i) : item(i) {ct++;}
+	~HasFriend() {ct--; }
+	friend void counts<T>();
+	friend void reports(HasFriend<T> &); // template parameter
+};
+
+
+// each specialization has its own static data member
+template <typename T>
+int HasFriend<T>::ct = 0;
+
+
+template <typename T>
+void counts()
+{
+	cout << "double count: " << HasFriend<T>::ct << endl;
+}
+
+
+
+template <typename T>
+void reports(HasFriend<T> &hf)
+{
+	cout <<"HasFriend<int>: " << hf.item << endl;
+}
+
+
+
+int main(){
+	HasFriend<int> hfi1(10);
+	counts();
+	reports(hfi1);
+
+	return 0;
+}

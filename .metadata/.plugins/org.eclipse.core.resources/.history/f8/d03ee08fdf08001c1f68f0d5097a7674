@@ -1,0 +1,30 @@
+/*
+ * main.cpp
+ *
+ *  Created on: Aug 29, 2021
+ *      Author: ragab
+ */
+
+
+#include <iostream>
+using namespace std;
+
+template <class T=int>
+class Arrayy{
+private:
+	T arr[15];
+public:
+
+
+};
+int main(){
+	cout<<"------------------Create waiterSinger Object---------------------"<<endl;
+
+	cout<<"-----------------Destroy waiterSinger Object---------------------"<<endl;
+
+
+
+	return 0;
+}
+
+
