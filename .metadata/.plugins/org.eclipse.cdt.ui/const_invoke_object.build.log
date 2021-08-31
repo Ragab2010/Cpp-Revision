@@ -1,6 +1,6 @@
-19:46:17 **** Incremental Build of configuration Debug for project const_invoke_object ****
+19:54:04 **** Incremental Build of configuration Debug for project const_invoke_object ****
 make all 
 make: Nothing to be done for 'all'.
 
-19:46:17 Build Finished. 0 errors, 0 warnings. (took 178ms)
+19:54:04 Build Finished. 0 errors, 0 warnings. (took 292ms)
 

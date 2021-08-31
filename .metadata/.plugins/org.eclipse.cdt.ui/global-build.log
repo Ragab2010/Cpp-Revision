@@ -1,15 +1,18 @@
-22:08:14 **** Incremental Build of configuration Debug for project Template Classes and Friends ****
+02:03:22 **** Incremental Build of configuration Debug for project define exception class ****
 make all 
 Building file: ../main.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: Template Classes and Friends
+Building target: define exception class
 Invoking: GCC C++ Linker
-g++  -o "Template Classes and Friends"  ./main.o   
-Finished building target: Template Classes and Friends
+g++  -o "define exception class"  ./main.o   
+Finished building target: define exception class
  
-22:08:15 **** Incremental Build of configuration Debug for project Template Classes and Friends ****
+02:03:26 **** Incremental Build of configuration Debug for project define exception class ****
+make all 
+make: Nothing to be done for 'all'.
+02:03:31 **** Incremental Build of configuration Debug for project define exception class ****
 make all 
 make: Nothing to be done for 'all'.
